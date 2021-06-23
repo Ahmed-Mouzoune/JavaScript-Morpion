@@ -1,0 +1,89 @@
+body {
+    background-color: #f1f1f1;
+    cursor: pointer;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #9BB1FF;
+}
+.page {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay {
+    position: absolute;
+    top: 50;
+    left: 50;
+    transform-origin: (-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 70vw;
+    height: 50vh;
+    background: #E2FDFF;
+    text-align: center;
+    padding: 20px;
+    
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px#5465FF;
+}
+.container {
+    height: 366px;
+    width: 366px;
+    border-radius: 10px;
+    
+    box-shadow: 0px 0px 10px #9BB1FF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cellule {
+    width: 33%;
+    height: 33%;
+
+    text-align: center;
+    line-height: 125px;
+    font-size: 145px;
+    font-weight: lighter;
+}
+/* Border de la case 5 */
+.container :nth-child(5) {
+    border: 1px solid #788BFF;
+}
+/* Border de la case 2 et 8 */
+.container :nth-child(2) {
+    border-left: 1px solid #788BFF;
+    border-right: 1px solid #788BFF;
+}
+.container :nth-child(8) {
+    border-left: 1px solid #788BFF;
+    border-right: 1px solid #788BFF;
+}
+/* Border de la case 4 et 6 */
+.container :nth-child(4) {
+    border-top: 1px solid #788BFF;
+    border-bottom: 1px solid #788BFF;
+}
+.container :nth-child(6) {
+    border-top: 1px solid #788BFF;
+    border-bottom: 1px solid #788BFF;
+}
+
+i {
+    font-size: 6rem;
+    height: min-content;
+    color: #788BFF;
+}
+.title {
+    height: min-content;
+    width: 100%;
+    font-size: 1.5rem;
+}
+.disparition {
+    display: none;
+}
